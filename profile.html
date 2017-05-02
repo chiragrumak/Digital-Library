@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+	width: 100px;
+	
+}
+
+header {background: black;color:white;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;
+	  height: 500px;
+	  width: 10px;		
+}
+
+.aside {background:#eee;
+	  height: 500px;
+	  width: 10px;
+	  position: absolute;	
+	  float: right; 
+	  right: 0px;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+  <h1><u>Digital Library</u></h1>
+</header>
+
+<nav class="nav">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="#">Important links</a></li>
+  <li><a href="#">Contact Us</a></li>
+</ul>
+</nav>
+
+<article class="article">
+<center>
+<form name="form1" method = "post" action= "Update.jsp">
+
+<table border="0">
+<th><h2 align="center">Profile details</h2></th>
+<tr>
+  <td>First Name: </td><td>Ram</td>
+ </tr>
+<tr>
+  <td>Last Name: </td> <td>Kumar</td>
+ </tr>
+ <tr>
+  <td>Email:  </td><td>ramkumar@gmail.com</td>
+</tr> 
+<tr>
+  <td>Date of Birth:  </td><td>20121993</td>
+</tr>
+
+<tr>
+  <td>Gender:</td><td>Male</td>
+</tr>
+<tr>
+  <td>Address:</td><td>Lal Bahadur Shastri Nagar, Patna</td>
+</tr>
+<tr>
+  <td>State:</td><td>Bihar</td>
+</tr>
+<tr> 
+  <td>Phone No:  </td><td>09823434385</td>
+</tr>
+
+<tr>
+  <td>Educational level : </td><td>Adult Education</td>
+</tr>
+
+<tr><td></td></tr><tr><td></td></tr>
+<tr>
+  <td> </td><td></td><td><input type ="submit" value="Update"/></td></tr>
+</table>
+
+</form>
+</center>
+
+
+</article>
+
+<footer>Copyright &copy; Digitallibray.com</footer>
+</div>
+</body>
+</html>
