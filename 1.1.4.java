@@ -11,7 +11,7 @@ public class HelloWorld {
 		String input1 = sc.next();
 		String input2 = sc.next();
         */
-        String input1 = "rail safety";
+      		String input1 = "rail safety";
 		String input2 = "fairy tales";
 		
 		char input11[] = input1.toCharArray();
@@ -19,10 +19,7 @@ public class HelloWorld {
 		char input22[] = input2.toCharArray();
 		Arrays.sort(input22);
 		
-		System.out.println(input11);
-		System.out.println(input22);
-		
-		if(Arrays.deepEquals(input11,input22))
+	    if(String.valueOf(input11).equals(String.valueOf(input22)))
 		    System.out.println("\n It's an Anagram!");
 		else
 		    System.out.println("\n It's not an Anagram.");
