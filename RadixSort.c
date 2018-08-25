@@ -29,15 +29,22 @@ int main(){
     else{
       q = start;
       
-      while(q->link != NULL){
+      while(q->link != NULL)
         q = q->link;
       q->link = tmp;
-      }
     }
-   
   }
+  radix_short();
+  printf("\n Sorted list is : \n");
+  q = start;
+  
+  while(q != NULL){
+    printf("%2d", q->info);
+    q = q->link;
+  }
+  printf("\n");
 
-
+  return 0;
 }
 
 
